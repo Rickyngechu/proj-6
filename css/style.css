@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .txt {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    color: hsl(183, 100%, 15%);
+  }
+  .input,
+  .btn-custom {
+    text-align: right;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    border: 2px solid transparent;
+  }
+  .input {
+    transition: all 0.2s;
+  }
+  .input:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+  }
+  .btn {
+    background-color: hsl(183, 100%, 15%);
+    padding: 0.2rem 0;
+    font-size: 1.2rem;
+    color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+  }
+  /* .btn:checked {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  } */
+  .btn-selected {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+  .btn-custom {
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-inline: 1rem;
+    transition: 0.2s;
+  }
+  .btn-custom::placeholder {
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .btn-custom:focus,
+  .input:focus {
+    border: 2px solid hsl(172, 67%, 45%);
+  }
+
+  .tip-amt,
+  .tot-outp {
+    font-size: 1.4rem;
+  }
+
+  .span-txt-1 {
+    color: hsl(185, 41%, 84%);
+  }
+  .span-txt-2 {
+    color: hsl(186, 14%, 43%);
+    font-size: 15px;
+  }
+}

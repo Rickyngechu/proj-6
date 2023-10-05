@@ -1,44 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <section class="section-calculator h-[80rem] bg-Light-grayish-cyan">
+      <div
+        class="cont max-w-7xl h-[80rem] mx-auto flex justify-center items-center"
+      >
+        <div class="calculator w-11/12 sm:max-w-sm xl:max-w-6xl">
+          <p class="txt mb-8 block">
+            SPLI <br />
+            TTER
+          </p>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div
+            class="calculator-item bg-White rounded-md p-5 xl:flex justify-between xl:max-w-6xl"
+          >
+            <div class="input-panel xl:w-[45%]">
+              <form
+                class="form"
+                action="
+              #"
+              >
+                <div class="inpt-1 mb-5">
+                  <label
+                    for="bill"
+                    class="label block mb-2 text-Dark-grayish-cyan"
+                    >Bill</label
+                  >
+                  <div class="inpt relative">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-5 h-5 absolute top-[6px] left-[5px] text-Dark-grayish-cyan"
+                    >
+                      <path
+                        d="M10.75 10.818v2.614A3.13 3.13 0 0011.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 00-1.138-.432zM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 00-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-6a.75.75 0 01.75.75v.316a3.78 3.78 0 011.653.713c.426.33.744.74.925 1.2a.75.75 0 01-1.395.55 1.35 1.35 0 00-.447-.563 2.187 2.187 0 00-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 11-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 111.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 01-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 011.653-.713V4.75A.75.75 0 0110 4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      id="bill"
+                      name="bill"
+                      class="input bill-inp bg-Verylight-grayish-cyan block w-full rounded-sm px-2 py-1"
+                    />
+                  </div>
+                </div>
+                <div class="input-2 block">
+                  <label
+                    for="tip"
+                    class="label block mb-2 text-Dark-grayish-cyan"
+                    >Select Tip %</label
+                  >
+                  <div class="inpt-btn grid grid-cols-2 gap-5 xl:grid-cols-3">
+                    <input
+                      type="button"
+                      id="tip"
+                      name="tip"
+                      value="5%"
+                      class="btn btn-1"
+                    />
+                    <input
+                      type="button"
+                      id="tip"
+                      name="tip"
+                      value="10%"
+                      class="btn btn-2"
+                    />
+                    <input
+                      type="button"
+                      id="tip"
+                      name="tip"
+                      value="15%"
+                      placeholder="15%"
+                      class="btn btn-3"
+                    />
+                    <input
+                      type="button"
+                      id="tip"
+                      name="tip"
+                      value="25%"
+                      class="btn btn-4"
+                    />
 
-  Bill
+                    <input
+                      type="button"
+                      id="tip"
+                      name="tip"
+                      value="50%"
+                      class="btn btn-5"
+                    />
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+                    <input
+                      type="text"
+                      id="tip"
+                      name="tip"
+                      placeholder="Custom"
+                      class="btn-custom"
+                    />
+                  </div>
+                  <div class="inpt-3 mb-5 mt-7">
+                    <label
+                      for="people"
+                      class="label block mb-2 text-Dark-grayish-cyan"
+                      >Number of people</label
+                    >
 
-  Number of People
+                    <div class="inpt relative">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6 absolute top-[6px] left-[5px] text-Dark-grayish-cyan"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
 
-  Tip Amount
-  / person
+                      <input
+                        type="text"
+                        id="people"
+                        min="0"
+                        name="people"
+                        class="input input-people bg-Verylight-grayish-cyan block w-full rounded-sm px-2 py-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div
+              class="output-panel mt-5 bg-Verydark-cyan rounded-md px-3 py-3 xl:w-[50%] xl:px-8 xl:py-8"
+            >
+              <div class="amt mb-8 flex justify-between">
+                <p>
+                  <span class="block span-txt-1">Tip Amount</span>
+                  <span class="span-txt-2">/person</span>
+                </p>
+                <p class="tip-amt text-Strong-cyan">
+                  $<span class="tip-amt__val">0.00</span>
+                </p>
+              </div>
+              <div class="total mb-7 flex justify-between xl:mb-20">
+                <p>
+                  <span class="block span-txt-1">Total</span>
+                  <span class="span-txt-2">/person</span>
+                </p>
+                <p class="tot-outp text-Strong-cyan">
+                  $<span class="tot-outp__val">0.00</span>
+                </p>
+              </div>
 
-  Total
-  / person
+              <button
+                type="reset"
+                class="btn-reset bg-Strong-cyan block w-full py-2 rounded-md uppercase"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
